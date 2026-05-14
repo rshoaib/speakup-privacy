@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SpeakUp — Privacy Policy</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #ffffff;
+    }
+    h1 { font-size: 28px; margin: 0 0 8px; }
+    h2 { font-size: 20px; margin-top: 32px; }
+    .updated { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+    p, li { font-size: 16px; }
+    ul { padding-left: 22px; }
+    code { background: #f4f4f5; padding: 2px 6px; border-radius: 4px; font-size: 14px; }
+    a { color: #6d28d9; }
+    .callout {
+      background: #f5f3ff;
+      border-left: 3px solid #8b5cf6;
+      padding: 12px 16px;
+      border-radius: 4px;
+      margin: 16px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy — SpeakUp</h1>
+  <p class="updated">Last updated: 15 May 2026</p>
+
+  <p>SpeakUp ("the app", "we") is a mobile app that helps people practice speaking on a topic and get gentle, AI-generated coaching feedback. This policy explains what data the app handles, where it goes, and your choices.</p>
+
+  <div class="callout">
+    <strong>Short version:</strong> The app records your voice while you practice, sends that recording to Google's Gemini API to transcribe and analyse it, and shows you feedback. We do not require an account, do not sell data, do not run ads, and do not use third-party analytics. Audio files stay on your phone.
+  </div>
+
+  <h2>1. What we collect</h2>
+  <ul>
+    <li><strong>Voice recordings.</strong> When you tap "Start recording", the app captures audio through your phone's microphone. Recordings are stored locally on your device in the app's cache directory.</li>
+    <li><strong>Transcripts and metrics.</strong> The app generates a transcript of what you said, words-per-minute, and filler-word count from each recording. These are stored locally.</li>
+    <li><strong>Your topic input.</strong> If you type a custom topic, the text is sent to the AI service to generate a coaching brief.</li>
+    <li><strong>App preferences.</strong> Whether you've completed onboarding, whether you've seen the mic warm-up, and similar local flags. These never leave your device.</li>
+  </ul>
+
+  <p>We do <strong>not</strong> collect: name, email address, phone number, location, contacts, photos, advertising identifiers, device identifiers, or any account credentials.</p>
+
+  <h2>2. How your data is used</h2>
+  <ul>
+    <li>Your voice recording and topic text are sent to Google's <strong>Gemini API</strong> to produce a transcript, speech metrics, and written feedback. Google processes this data under its own terms and may use it as described in the <a href="https://ai.google.dev/gemini-api/terms" rel="noopener noreferrer">Gemini API Terms</a> and <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>.</li>
+    <li>The transcript and feedback returned by Google are shown to you in the app and saved locally with your most recent takes (up to 5).</li>
+    <li>App preferences are used only to remember your in-app choices on this device.</li>
+  </ul>
+
+  <h2>3. Third parties</h2>
+  <ul>
+    <li><strong>Google Gemini API</strong> — receives audio recordings and topic text for AI processing. See links above.</li>
+    <li><strong>Google Play</strong> — distributes the app and may collect installation and crash data per Google's policies.</li>
+    <li><strong>Expo</strong> — the framework used to build the app. Expo may receive non-personal diagnostic information when you launch the app on a development build.</li>
+    <li><strong>YouTube</strong> — the "Watch" tab opens the YouTube app or website when you tap a video. SpeakUp does not send any data to YouTube; your interaction from that point is governed by YouTube's policies.</li>
+  </ul>
+  <p>We do not use third-party analytics, advertising, attribution, or crash-reporting SDKs.</p>
+
+  <h2>4. Where data is stored, and for how long</h2>
+  <ul>
+    <li><strong>On your device:</strong> Audio files, transcripts, scores, and preferences. The app keeps your last 5 recordings. New recordings replace the oldest one automatically.</li>
+    <li><strong>On Google's servers:</strong> When the app calls the Gemini API, your recording and topic text are processed there. Retention and use on Google's side are governed by the Gemini API Terms and Google's Privacy Policy.</li>
+  </ul>
+
+  <h2>5. Your choices and rights</h2>
+  <ul>
+    <li><strong>Decline microphone access.</strong> If you deny the microphone permission, recording is disabled. The rest of the app (topic browsing, watching videos) still works.</li>
+    <li><strong>Delete a recording.</strong> Long-press any recording on the home screen and confirm "Delete" to remove that take and its metadata from your device.</li>
+    <li><strong>Clear all recordings.</strong> Use "Clear all" in the home-screen takes section, or uninstall the app to remove everything stored locally.</li>
+    <li><strong>Stop sharing audio with AI.</strong> If you don't want your audio sent to Google for analysis, do not record sessions — the rest of the app does not transmit your audio.</li>
+    <li><strong>Data access and deletion requests.</strong> Because we do not maintain accounts or server-side user records, there is no remote data for us to export or delete. To remove anything stored on Google's side, contact Google via the links above.</li>
+  </ul>
+
+  <h2>6. Children's privacy</h2>
+  <p>SpeakUp is not directed to children under 13. We do not knowingly collect personal information from children. If you believe a child has used the app, uninstall it and contact us at the email below.</p>
+
+  <h2>7. Security</h2>
+  <p>Network traffic between the app and the Gemini API is sent over HTTPS. We do not run our own servers and do not store your data outside your device. No method of transmission is perfectly secure, however, and we cannot guarantee absolute security.</p>
+
+  <h2>8. Changes to this policy</h2>
+  <p>If we change this policy, we will update the "Last updated" date above and, for material changes, post a notice in the app on the next launch.</p>
+
+  <h2>9. Contact</h2>
+  <p>Questions about this policy or how the app handles your data: <a href="mailto:segmentbi@gmail.com">segmentbi@gmail.com</a>.</p>
+</body>
+</html>

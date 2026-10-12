@@ -1,96 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SpeakUp — Privacy Policy</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privacy Policy for SpeakUp — Confidence Coach. Audio is analysed by Google Gemini; feedback, topics and coaching briefs come from DeepInfra, Anthropic Claude or Google Gemini, via our own relay. Nothing is stored on our servers." />
+  <meta name="theme-color" content="#06B6D4" />
+  <title>Privacy Policy — SpeakUp: Confidence Coach</title>
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    :root {
+      --background: #F6FBFD;
+      --card: #FFFFFF;
+      --primary: #06B6D4;
+      --primary-light: #22D3EE;
+      --primary-muted: rgba(6, 182, 212, 0.10);
+      --warn: #F59E0B;
+      --warn-muted: rgba(245, 158, 11, 0.10);
+      --text: #0F1014;
+      --text-secondary: #3F4756;
+      --text-muted: #94A3B8;
+      --border-light: #E6F4F8;
+      --shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+      --shadow-lifted: 0 4px 16px rgba(0, 0, 0, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Helvetica Neue", sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .page {
       max-width: 760px;
       margin: 0 auto;
-      padding: 32px 20px 64px;
-      color: #1a1a1a;
-      line-height: 1.6;
-      background: #ffffff;
+      padding: 32px 20px 80px;
     }
-    h1 { font-size: 28px; margin: 0 0 8px; }
-    h2 { font-size: 20px; margin-top: 32px; }
-    .updated { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
-    p, li { font-size: 16px; }
-    ul { padding-left: 22px; }
-    code { background: #f4f4f5; padding: 2px 6px; border-radius: 4px; font-size: 14px; }
-    a { color: #6d28d9; }
+
+    .hero {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: #fff;
+      border-radius: 20px;
+      padding: 36px 28px;
+      box-shadow: var(--shadow-lifted);
+      margin-bottom: 28px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      opacity: 0.92;
+      margin-bottom: 10px;
+    }
+
+    .brand-mark {
+      width: 28px; height: 28px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.18);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 800;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .updated { font-size: 13px; opacity: 0.85; margin: 0; }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border-light);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      margin-bottom: 16px;
+    }
+
+    .lead { font-size: 17px; color: var(--text); margin: 0; }
+
+    h2 {
+      font-size: 20px; font-weight: 700; color: var(--text);
+      margin: 0 0 12px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    h2 .pill {
+      display: inline-block;
+      width: 6px; height: 22px;
+      border-radius: 3px;
+      background: var(--primary);
+    }
+
+    p, li {
+      color: var(--text-secondary);
+      font-size: 15px;
+      line-height: 1.7;
+      margin: 0 0 10px;
+    }
+
+    ul { margin: 8px 0 0; padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    li::marker { color: var(--primary); }
+
     .callout {
-      background: #f5f3ff;
-      border-left: 3px solid #8b5cf6;
-      padding: 12px 16px;
-      border-radius: 4px;
-      margin: 16px 0;
+      background: var(--primary-muted);
+      border-left: 4px solid var(--primary);
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-top: 16px;
+      color: var(--text);
+      font-size: 14px;
+    }
+
+    .callout.warn {
+      background: var(--warn-muted);
+      border-left-color: var(--warn);
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 13px;
+      margin-top: 36px;
+    }
+    footer .sep { margin: 0 6px; opacity: 0.5; }
+
+    @media (max-width: 540px) {
+      .page { padding: 20px 14px 60px; }
+      .hero { padding: 28px 22px; border-radius: 16px; }
+      h1 { font-size: 26px; }
+      .card { padding: 22px; border-radius: 14px; }
+      h2 { font-size: 18px; }
     }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy — SpeakUp</h1>
-  <p class="updated">Last updated: 15 May 2026</p>
+  <main class="page">
+    <section class="hero">
+      <div class="brand">
+        <span class="brand-mark">S</span>
+        <span>SpeakUp — Confidence Coach</span>
+      </div>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: October 13, 2026</p>
+    </section>
 
-  <p>SpeakUp ("the app", "we") is a mobile app that helps people practice speaking on a topic and get gentle, AI-generated coaching feedback. This policy explains what data the app handles, where it goes, and your choices.</p>
+    <section class="card">
+      <h2><span class="pill"></span>Your Privacy Matters</h2>
+      <p class="lead">SpeakUp, published by Rizwan Shoaib, helps you practice speaking with confidence. Because the app analyzes your voice, this policy explains exactly how your audio is handled.</p>
+    </section>
 
-  <div class="callout">
-    <strong>Short version:</strong> The app records your voice while you practice, sends that recording to Google's Gemini API to transcribe and analyse it, and shows you feedback. We do not require an account, do not sell data, do not run ads, and do not use third-party analytics. Audio files stay on your phone.
-  </div>
+    <section class="card">
+      <h2><span class="pill"></span>Audio Recording &amp; AI Analysis</h2>
+      <p>When you start a practice session, SpeakUp records your speech using your device's microphone. To give you coaching feedback, the recording and its analysis are processed by AI services (Google Gemini, DeepInfra and Anthropic, as set out below), reached through our own relay server (a Google Cloud Function we operate). The relay exists so the AI providers' credentials stay on our server and not inside the app; it forwards each request and does <strong>not</strong> store or log your audio or transcript.</p>
+      <ul>
+        <li>Recordings are <strong>only</strong> captured during an active practice session that you start.</li>
+        <li><strong>Speech analysis (audio):</strong> the recorded clip is sent to <strong>Google Gemini</strong>, which returns the transcript, speaking pace, filler-word count and an overall score. We do not store your audio; once the analysis is returned the clip is no longer needed by us. Processing by Google is governed by Google's privacy policy and paid Generative AI terms, under which your content is not used to train Google's models — see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</li>
+        <li><strong>Post-practice feedback (text):</strong> the transcript and the measurements above (length, pace, filler words, score) are sent to <strong>DeepInfra</strong>, which runs an open-weight language model (DeepSeek or Qwen) to produce the feedback card shown after each take. DeepInfra does not retain prompts or outputs for these models (zero data retention) — see <a href="https://docs.deepinfra.com/account/data-privacy" target="_blank" rel="noopener">DeepInfra data privacy</a>. If DeepInfra is unavailable, the same request is sent to <strong>Google Gemini</strong> instead, under the paid terms described above. If both fail, the feedback is built on your device from the measurements alone.</li>
+        <li><strong>Coaching briefs (text):</strong> when you ask for a coaching brief on a topic — including a custom topic you typed yourself — the topic text is sent to <strong>Anthropic</strong>'s Claude model (previously DeepInfra's zero-retention model). Anthropic does not use API content to train its models and deletes it within <strong>30 days</strong>; content flagged as violating its usage policies may be kept for up to 2 years for safety review — see <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic's Privacy Policy</a>. If Anthropic is unavailable, the request goes to Google Gemini instead.</li>
+        <li><strong>Topic suggestions (text):</strong> when you ask for a practice topic, the request (with the list of topics you were recently shown, so they are not repeated) is sent to <strong>Google Gemini</strong> (previously DeepInfra's zero-retention model); if Gemini's primary model is unavailable, another Gemini model answers.</li>
+        <li>No audio or transcript is sent with topic or coaching-brief requests. We may move a step between the providers named in this section to keep the app working; any one request is answered by only one of them.</li>
+        <li>Only the analysis results (score, transcript text, pace, feedback) are saved to your device for your session history.</li>
+      </ul>
+      <div class="callout warn">
+        Please avoid speaking sensitive personal information (passwords, financial details, health information) during practice sessions, since the audio and its transcript will be transmitted to these AI services for analysis.
+      </div>
+    </section>
 
-  <h2>1. What we collect</h2>
-  <ul>
-    <li><strong>Voice recordings.</strong> When you tap "Start recording", the app captures audio through your phone's microphone. Recordings are stored locally on your device in the app's cache directory.</li>
-    <li><strong>Transcripts and metrics.</strong> The app generates a transcript of what you said, words-per-minute, and filler-word count from each recording. These are stored locally.</li>
-    <li><strong>Your topic input.</strong> If you type a custom topic, the text is sent to the AI service to generate a coaching brief.</li>
-    <li><strong>App preferences.</strong> Whether you've completed onboarding, whether you've seen the mic warm-up, and similar local flags. These never leave your device.</li>
-  </ul>
+    <section class="card">
+      <h2><span class="pill"></span>Data Storage</h2>
+      <ul>
+        <li>Your practice history, scores, streaks, and preferences are stored locally on your device.</li>
+        <li>No user account or registration is required.</li>
+        <li>We never sell your personal data. The third parties involved are: Google Gemini (speech analysis, topic suggestions, and the backup for feedback and coaching briefs), DeepInfra (post-practice feedback) and Anthropic (coaching briefs), all described above; Google AdMob (advertising); and Google Analytics for Firebase and Firebase Crashlytics (usage analytics and crash reporting), each described below.</li>
+      </ul>
+    </section>
 
-  <p>We do <strong>not</strong> collect: name, email address, phone number, location, contacts, photos, advertising identifiers, device identifiers, or any account credentials.</p>
+    <section class="card">
+      <h2><span class="pill"></span>Advertising</h2>
+      <p>SpeakUp is free and supported by ads served through <strong>Google AdMob</strong>. You may see a banner on the home screen and, occasionally, a full-screen ad shown between activities (never during a recording or coaching session).</p>
+      <ul>
+        <li>To serve and measure ads, Google AdMob may collect and process a device advertising identifier and standard technical data (such as device type, coarse location, and IP address). This is handled by Google, not by us — see <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">how Google uses data from AdMob</a> and <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses data from partner sites and apps</a>.</li>
+        <li><strong>Consent (EEA, UK &amp; Switzerland):</strong> on first launch you are shown a Google-provided consent form. Your choice determines whether ads are personalized. If you decline, or are outside these regions' scope, we request <strong>non-personalized</strong> ads.</li>
+        <li>You can reset your advertising identifier at any time in your device settings (Settings → Google → Ads on Android).</li>
+        <li>Your practice audio and analysis results are <strong>never</strong> used for advertising and are never shared with AdMob.</li>
+      </ul>
+    </section>
 
-  <h2>2. How your data is used</h2>
-  <ul>
-    <li>Your voice recording and topic text are sent to Google's <strong>Gemini API</strong> to produce a transcript, speech metrics, and written feedback. Google processes this data under its own terms and may use it as described in the <a href="https://ai.google.dev/gemini-api/terms" rel="noopener noreferrer">Gemini API Terms</a> and <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>.</li>
-    <li>The transcript and feedback returned by Google are shown to you in the app and saved locally with your most recent takes (up to 5).</li>
-    <li>App preferences are used only to remember your in-app choices on this device.</li>
-  </ul>
+    <section class="card">
+      <h2><span class="pill"></span>Analytics &amp; Crash Reporting</h2>
+      <p>
+        Besides advertising, the app uses the following Google services so we can keep it
+        working and improve it:
+      </p>
+      <ul>
+        <li><strong>Google Analytics for Firebase</strong> &mdash; usage analytics showing which features
+        are used and whether the app is healthy. It collects an app-instance identifier and the
+        advertising ID, app-interaction events (screens opened, sessions), coarse device
+        information, and an approximate location derived from your IP address.</li>
+        <li><strong>Firebase Crashlytics</strong> &mdash; crash reporting. It collects stack traces, the
+        app state at the moment of a crash, device metadata and a Crashlytics installation
+        identifier, so we can find and fix faults.</li>
+        <li><strong>Firebase Performance Monitoring</strong> &mdash; performance metrics such as start-up time and network latency, plus device metadata and an IP-derived country.</li>
+      </ul>
+      <p>
+        Google acts as our <strong>service provider</strong> for these. The data is used to run and
+        improve the app; it is not sold, and it is not shared with advertisers. It is separate
+        from the advertising data described above.
+      </p>
 
-  <h2>3. Third parties</h2>
-  <ul>
-    <li><strong>Google Gemini API</strong> — receives audio recordings and topic text for AI processing. See links above.</li>
-    <li><strong>Google Play</strong> — distributes the app and may collect installation and crash data per Google's policies.</li>
-    <li><strong>Expo</strong> — the framework used to build the app. Expo may receive non-personal diagnostic information when you launch the app on a development build.</li>
-    <li><strong>YouTube</strong> — the "Watch" tab opens the YouTube app or website when you tap a video. SpeakUp does not send any data to YouTube; your interaction from that point is governed by YouTube's policies.</li>
-  </ul>
-  <p>We do not use third-party analytics, advertising, attribution, or crash-reporting SDKs.</p>
+      <h2><span class="pill"></span>Permissions</h2>
+      <ul>
+        <li><strong>Microphone</strong> — Required to record your practice sessions for AI coaching feedback. The app only records while a session is active.</li>
+        <li><strong>Modify Audio Settings</strong> — Used to configure the recording stream for clear capture.</li>
+        <li><strong>Vibration</strong> — Used for haptic feedback during sessions.</li>
+      </ul>
+    </section>
 
-  <h2>4. Where data is stored, and for how long</h2>
-  <ul>
-    <li><strong>On your device:</strong> Audio files, transcripts, scores, and preferences. The app keeps your last 5 recordings. New recordings replace the oldest one automatically.</li>
-    <li><strong>On Google's servers:</strong> When the app calls the Gemini API, your recording and topic text are processed there. Retention and use on Google's side are governed by the Gemini API Terms and Google's Privacy Policy.</li>
-  </ul>
+    <section class="card">
+      <h2><span class="pill"></span>Data Deletion</h2>
+      <p>You can reset your entire practice history at any time from the app's settings. Uninstalling the app also removes all locally stored data. If you wish to request deletion of any data processed by Google's Gemini service, DeepInfra or Anthropic, contact us at the email below and we will help facilitate the request.</p>
+    </section>
 
-  <h2>5. Your choices and rights</h2>
-  <ul>
-    <li><strong>Decline microphone access.</strong> If you deny the microphone permission, recording is disabled. The rest of the app (topic browsing, watching videos) still works.</li>
-    <li><strong>Delete a recording.</strong> Long-press any recording on the home screen and confirm "Delete" to remove that take and its metadata from your device.</li>
-    <li><strong>Clear all recordings.</strong> Use "Clear all" in the home-screen takes section, or uninstall the app to remove everything stored locally.</li>
-    <li><strong>Stop sharing audio with AI.</strong> If you don't want your audio sent to Google for analysis, do not record sessions — the rest of the app does not transmit your audio.</li>
-    <li><strong>Data access and deletion requests.</strong> Because we do not maintain accounts or server-side user records, there is no remote data for us to export or delete. To remove anything stored on Google's side, contact Google via the links above.</li>
-  </ul>
+    <section class="card">
+      <h2><span class="pill"></span>Children's Privacy</h2>
+      <p>SpeakUp is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided us information, please contact us so we can address it.</p>
+    </section>
 
-  <h2>6. Children's privacy</h2>
-  <p>SpeakUp is not directed to children under 13. We do not knowingly collect personal information from children. If you believe a child has used the app, uninstall it and contact us at the email below.</p>
+    <section class="card">
+      <h2><span class="pill"></span>Changes to This Policy</h2>
+      <p>We may update this privacy policy from time to time. The "Last updated" date at the top of this page reflects the most recent revision. Continued use of the app after changes are posted constitutes acceptance of the updated policy.</p>
+    </section>
 
-  <h2>7. Security</h2>
-  <p>Network traffic between the app and the Gemini API is sent over HTTPS. We do not run our own servers and do not store your data outside your device. No method of transmission is perfectly secure, however, and we cannot guarantee absolute security.</p>
+    <section class="card">
+      <h2><span class="pill"></span>Contact</h2>
+      <p>If you have questions about this privacy policy, please contact us at <a href="mailto:segmentbi@gmail.com">segmentbi@gmail.com</a>.</p>
+    </section>
 
-  <h2>8. Changes to this policy</h2>
-  <p>If we change this policy, we will update the "Last updated" date above and, for material changes, post a notice in the app on the next launch.</p>
-
-  <h2>9. Contact</h2>
-  <p>Questions about this policy or how the app handles your data: <a href="mailto:segmentbi@gmail.com">segmentbi@gmail.com</a>.</p>
+    <footer>
+      <span>&copy; 2026 Rizwan Shoaib &middot; SpeakUp — Confidence Coach</span>
+      <span class="sep">·</span>
+      <span>All rights reserved</span>
+    </footer>
+  </main>
 </body>
 </html>
